@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
     --fondo: #11224E;
     --texto: #EEEEEE;
@@ -5,6 +6,73 @@ html{
     --titulos: #F87B1B;
     --encabezados: "Contrail One", sans-serif;
     --textoF: "Inter Tight", sans-serif;
+=======
+html {
+  --fondo: #11224E;
+  --texto-color: #EEEEEE;
+  --botones: #CBD99B;
+  --titulos: #F87B1B;
+
+  --font-encabezados: "Contrail One", sans-serif;
+  --font-texto: "Inter Tight", sans-serif;
+}
+
+/* Opcional pero recomendado: texto global */
+body {
+  background-color: var(--fondo);
+  color: var(--texto-color);
+  font-family: var(--font-texto);
+}
+
+/* Formulario - Rafael */
+#contacto {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Título del formulario */
+#contacto h2 {
+  font-family: var(--font-encabezados);
+  color: var(--titulos) !important;
+}
+
+/* Caja del formulario */
+#formLucha {
+  background-color: rgba(17, 34, 78, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* Inputs */
+#formLucha .form-control,
+#formLucha .form-select {
+  background-color: #0b1633;
+  border: 1px solid #243a73;
+  color: var(--texto-color);            
+}
+
+#formLucha .form-control::placeholder {
+  color: #b0b0b0;
+}
+
+/* BOTÓN del formulario – usando SOLO tus colores */
+#formLucha button {
+  background-color: var(--botones) !important; 
+  color: var(--fondo) !important;            
+  border: none;
+  font-weight: 700;
+}
+
+/* Hover: un poco más oscuro pero de la misma familia */
+#formLucha button:hover {
+  filter: brightness(0.95);
+}
+
+/* Mensaje de éxito */
+#mensajeExito {
+  color: #00ff99;
+  font-weight: 500;
+>>>>>>> Rafael
 }
 
 body{
