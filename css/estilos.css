@@ -4,5 +4,54 @@ html{
     --botones: #CBD99B;
     --titulos: #F87B1B;
     --encabezados: "Contrail One", sans-serif;
-    --texto: "Inter Tight", sans-serif;
+    --textoF: "Inter Tight", sans-serif;
+}
+
+body{
+    background-color: var(--fondo);
+}
+header{
+    text-align: center;
+
+}
+.informacion{
+    background-image: url("/./assets/Fondo.png");
+    padding: 50px;
+}
+h2{
+    font-family: var(--encabezados);
+    color: var(--titulos);
+    font-size: 70px;
+    margin: 25px 0px 25px 0px;
+}
+p{
+    color:var(--texto);
+    font-family: var(--textoF);
+    font-size: 20px;
+    font-weight: bold;
+}
+.barra{
+    background-color: var(--botones);
+    font-family: var(--encabezados);
+    font-size: 30px;
+    color:var(--titulos);
+    display: inline-block;
+    border-radius: 50px;
+    padding-inline: 50px;
+    border: 5px solid var(--titulos);
+    box-shadow: -5px 10px 14px black, inset -5px -5px 30px black;
+    text-shadow: 0 0 10px black;
+    margin-top: 1rem;
+}
+.container{
+    font-family: var(--textoF);
+}
+.btn{;
+    border-radius: 50px;
+    background-color: var(--titulos);
+    color: var(--fondo);
+}
+
+.btn:hover{
+    background-color: var(--fondo);
 }
