@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 html{
     --fondo: #11224E;
     --texto: #EEEEEE;
@@ -6,17 +6,11 @@ html{
     --titulos: #F87B1B;
     --encabezados: "Contrail One", sans-serif;
     --textoF: "Inter Tight", sans-serif;
-=======
-html {
-  --fondo: #11224E;
-  --texto-color: #EEEEEE;
-  --botones: #CBD99B;
-  --titulos: #F87B1B;
 
   --font-encabezados: "Contrail One", sans-serif;
   --font-texto: "Inter Tight", sans-serif;
 }
-<<<<<<< HEAD
+
 
 /* Opcional pero recomendado: texto global */
 body {
@@ -73,7 +67,7 @@ body {
 #mensajeExito {
   color: #00ff99;
   font-weight: 500;
->>>>>>> Rafael
+
 }
 
 body{
@@ -115,7 +109,7 @@ p{
 .container{
     font-family: var(--textoF);
 }
-.btn{;
+.btn{
     border-radius: 50px;
     background-color: var(--titulos);
     color: var(--fondo);
@@ -123,7 +117,62 @@ p{
 
 .btn:hover{
     background-color: var(--fondo);
-=======
+}
+
+
+.section-title {
+    font-family: 'Contrail One', cursive;
+    color: #F87B1B;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(17, 34, 78, 0.2);
+}
+
+.testimonial-card {
+    background-color: beige;
+    border-radius: 18px;
+    padding: 30px;
+    max-width: 420px;
+    box-shadow: 0 4px 15px rgba(17, 34, 78, 0.15);
+}
+
+.testimonial-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #F87B1B;
+    box-shadow: 0 0 10px rgba(248, 123, 27, 0.5);
+}
+
+.testimonial-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #11224E;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #11224E;
+    padding: 0 8px;
+}
+
+.mask-rating {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(50%) sepia(70%) saturate(900%) hue-rotate(350deg);
+}
+
+
+
+
+
+
 .foot{
     background-color: var(--fondo);
     h6{
@@ -140,5 +189,4 @@ a.icon{
         background-color: white;
     }
     height: 1rem;
->>>>>>> erick
 }
