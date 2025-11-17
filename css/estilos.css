@@ -16,6 +16,7 @@ html {
   --font-encabezados: "Contrail One", sans-serif;
   --font-texto: "Inter Tight", sans-serif;
 }
+<<<<<<< HEAD
 
 /* Opcional pero recomendado: texto global */
 body {
@@ -122,4 +123,22 @@ p{
 
 .btn:hover{
     background-color: var(--fondo);
+=======
+.foot{
+    background-color: var(--fondo);
+    h6{
+        font-family: var(--encabezados);
+        color:var(--titulos);   
+    }
+    font-family: var(--texto);
+}
+
+a.icon{
+    img{
+        height: 3rem;
+        border-radius: 20%;
+        background-color: white;
+    }
+    height: 1rem;
+>>>>>>> erick
 }
