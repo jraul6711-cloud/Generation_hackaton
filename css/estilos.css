@@ -1,99 +1,93 @@
+/* Resolved merge: consolidated variables and removed duplicate/invalid nested rules */
 
-html{
+:root {
     --fondo: #11224E;
     --texto: #EEEEEE;
     --botones: #CBD99B;
     --titulos: #F87B1B;
-    --encabezados: "Contrail One", sans-serif;
-    --textoF: "Inter Tight", sans-serif;
-
-  --font-encabezados: "Contrail One", sans-serif;
-  --font-texto: "Inter Tight", sans-serif;
+    --font-encabezados: "Contrail One", cursive;
+    --font-texto: "Inter Tight", sans-serif;
 }
 
-
-/* Opcional pero recomendado: texto global */
-body {
-  background-color: var(--fondo);
-  color: var(--texto-color);
-  font-family: var(--font-texto);
+/* Global body */
+html, body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: var(--font-texto);
 }
 
 /* Formulario - Rafael */
 #contacto {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-/* Título del formulario */
 #contacto h2 {
-  font-family: var(--font-encabezados);
-  color: var(--titulos) !important;
+    font-family: var(--font-encabezados);
+    color: var(--titulos) !important;
 }
 
-/* Caja del formulario */
 #formLucha {
-  background-color: rgba(17, 34, 78, 0.85);
-  padding: 2rem;
-  border-radius: 12px;
+    background-color: rgba(17, 34, 78, 0.85);
+    padding: 2rem;
+    border-radius: 12px;
 }
 
-/* Inputs */
 #formLucha .form-control,
 #formLucha .form-select {
-  background-color: #0b1633;
-  border: 1px solid #243a73;
-  color: var(--texto-color);            
+    background-color: #0b1633;
+    border: 1px solid #243a73;
+    color: var(--texto);
 }
 
 #formLucha .form-control::placeholder {
-  color: #b0b0b0;
+    color: #b0b0b0;
 }
 
-/* BOTÓN del formulario – usando SOLO tus colores */
 #formLucha button {
-  background-color: var(--botones) !important; 
-  color: var(--fondo) !important;            
-  border: none;
-  font-weight: 700;
+    background-color: var(--botones) !important;
+    color: var(--fondo) !important;
+    border: none;
+    font-weight: 700;
 }
 
-/* Hover: un poco más oscuro pero de la misma familia */
 #formLucha button:hover {
-  filter: brightness(0.95);
+    filter: brightness(0.95);
 }
 
-/* Mensaje de éxito */
 #mensajeExito {
-  color: #00ff99;
-  font-weight: 500;
-
+    color: #00ff99;
+    font-weight: 500;
 }
-header{
+
+header {
     text-align: center;
-
 }
-.informacion{
+
+.informacion {
     background-image: url("../assets/Fondo.png");
     padding: 50px;
 }
-h2{
-    font-family: var(--encabezados);
+
+h2 {
+    font-family: var(--font-encabezados);
     color: var(--titulos);
     font-size: 70px;
-    margin: 25px 0px 25px 0px;
+    margin: 25px 0;
 }
-p{
-    color:var(--texto);
-    font-family: var(--textoF);
+
+p {
+    color: var(--texto);
+    font-family: var(--font-texto);
     font-size: 20px;
     font-weight: bold;
 }
-.barra{
+
+.barra {
     background-color: var(--botones);
-    font-family: var(--encabezados);
+    font-family: var(--font-encabezados);
     font-size: 30px;
-    color:var(--titulos);
+    color: var(--titulos);
     display: inline-block;
     border-radius: 50px;
     padding-inline: 50px;
@@ -102,23 +96,24 @@ p{
     text-shadow: 0 0 10px black;
     margin-top: 1rem;
 }
-.container{
-    font-family: var(--textoF);
+
+.container {
+    font-family: var(--font-texto);
 }
-.btn{
+
+.btn {
     border-radius: 50px;
     background-color: var(--titulos);
     color: var(--fondo);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--fondo);
 }
 
-
 .section-title {
-    font-family: 'Contrail One', cursive;
-    color: #F87B1B;
+    font-family: var(--font-encabezados);
+    color: var(--titulos);
     font-size: 2.5rem;
     text-shadow: 1px 1px 3px rgba(17, 34, 78, 0.2);
 }
@@ -136,19 +131,19 @@ p{
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #F87B1B;
+    border: 4px solid var(--titulos);
     box-shadow: 0 0 10px rgba(248, 123, 27, 0.5);
 }
 
 .testimonial-name {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #11224E;
+    color: var(--fondo);
 }
 
 .testimonial-text {
     font-size: 1rem;
-    color: #11224E;
+    color: var(--fondo);
     padding: 0 8px;
 }
 
@@ -164,73 +159,57 @@ p{
     filter: invert(50%) sepia(70%) saturate(900%) hue-rotate(350deg);
 }
 
-
-
-
-
-
-.foot{
+.foot {
     background-color: var(--fondo);
-    h6{
-        font-family: var(--encabezados);
-        color:var(--titulos);   
-    }
-    font-family: var(--texto);
+    font-family: var(--font-texto);
 }
 
-a.icon{
-    img{
-        height: 3rem;
-        border-radius: 20%;
-        background-color: white;
-    }
-    height: 1rem;
+.foot h6 {
+    font-family: var(--font-encabezados);
+    color: var(--titulos);
 }
 
-.section-title {
-    font-family: 'Contrail One', cursive;
-    color: #F87B1B;
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 3px rgba(17, 34, 78, 0.2);
+a.icon img {
+    height: 3rem;
+    border-radius: 20%;
+    background-color: white;
 }
 
-.testimonial-card {
-    background-color: beige;
-    border-radius: 18px;
-    padding: 30px;
-    max-width: 420px;
-    box-shadow: 0 4px 15px rgba(17, 34, 78, 0.15);
+/* Beneficios / cards (from AdrianB branch) */
+.beneficios {
+    height: 530px;
+    width: 1000px;
+    margin: auto;
 }
 
-.testimonial-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #F87B1B;
-    box-shadow: 0 0 10px rgba(248, 123, 27, 0.5);
+img.benef {
+    height: 500px;
 }
 
-.testimonial-name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #11224E;
+h2#beneficios {
+    color: var(--titulos);
+    text-align: center;
+    padding: 20px;
 }
 
-.testimonial-text {
-    font-size: 1rem;
-    color: #11224E;
-    padding: 0 8px;
+h5.card-title,
+p.card-text {
+    text-align: center;
+    color: var(--texto);
+    margin-bottom: 20px;
 }
 
-.mask-rating {
-    width: 140px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.card {
+    border-color: var(--fondo);
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(50%) sepia(70%) saturate(900%) hue-rotate(350deg);
+.row, .border, .col-sm {
+    border-color: var(--fondo) !important;
+    color: var(--texto) !important;
+    font-family: var(--font-encabezados) !important;
+}
+
+.card-body {
+    background-color: var(--fondo);
+    border-color: var(--fondo);
 }
